@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //if publish set to true - your report will be posted on https://reports.cucumber.io/ - pretty juicy feature!
         //report will be self destroyed in 24 hours by default, you don't want to use this feature - use plugins
-        publish = false,
+        publish = true,
         //glue is everything that cucumber actually working with
         glue = {
                 "com.intellectsoft.cucumber.step", //step definitions

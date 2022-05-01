@@ -4,7 +4,7 @@ Feature: Security checks
   @security_check
   Scenario Outline: Check weak passwords
     Given I open planetakino.ua Main page
-    When I login with user name "someone" and password "somepassword"
+    When I login with user name "<user>" and password "<password>"
     Then user authorization status should be "anonymous"
 
     Examples:
